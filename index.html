@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <title>园子日志</title>
 <meta name="description" content="园子的个人工作台：记账、待办、体重、英语学习日志">
-<!-- 部署标记：2026-07-28 经 WorkBuddy 自动推送至 GitHub Pages（验证推送链路） -->
+<!-- 部署标记：2026-07-29 更新默认首页为「记账」，部署至腾讯云 COS（香港）+ GitHub 镜像 -->
 <link rel="manifest" href="manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
@@ -798,6 +798,7 @@ checkWeeklyReport();
   $(i).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$(b).click();}});
 });
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+switchPage('money');
 </script>
 </body>
 </html>
